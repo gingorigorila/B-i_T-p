@@ -1,0 +1,33 @@
+#container{
+    width: 900px;
+   padding:10px;
+}
+#left{
+    width:350px;
+    float: left;
+}
+#right{
+    width:550px;
+    float:right;
+}
+#left i{
+    left:100px;
+}
+hr{
+    /* border-color: red; */
+    border:solid red;
+}
+span{
+    padding-right:20px;
+}
+h2{
+    color:purple;
+}
+input{
+    margin-bottom: 10px;
+}
+input[type=submit]{
+    width:150px;
+    height:40px;
+    background-color: #66CDAA;
+}

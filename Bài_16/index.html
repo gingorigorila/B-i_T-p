@@ -1,0 +1,45 @@
+<html>
+<head>
+        <title>giai phuong trinh bac 1</title>
+</head>
+<body>
+    <form name="PT" method="post">
+        <center>
+        <H1>GIẢI PHƯƠNG TRÌNH BẬC NHẤT</H1>
+        <br>
+        <input type="text" name="Para_a" value="" placeholder="Hệ số a">
+        <br> 
+        <input type="text" name="Para_b" value="" placeholder="Hệ số b">
+
+        <br>
+        <input type="button" value="Giải Phương Trình" onClick="giai()">
+
+        <p>KẾT QUẢ</p>
+        <div id="KQ">
+
+        </div>
+        </center>
+    </form>
+    <script language="JavaScript">
+        function giai(){
+            var a = document.forms["PT"]["Para_a"].value;
+            var b = document.forms["PT"]["Para_b"].value;
+            var object = {
+                 a: a,
+                 b: b,
+                 GPT: function(){
+                     if(a == 0){
+                         if(b==0)
+                          return 'VSN';
+                        else 
+                           return 'VN';
+                     }
+                     else 
+                        return -b/a;
+                 } 
+            }
+            document.getElementById("KQ").innerHTML=(object.GPT());
+        }
+   </script>
+</body>
+</html>

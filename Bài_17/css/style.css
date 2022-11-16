@@ -1,0 +1,30 @@
+form{
+    padding-top:50px;
+    padding-left: 250px;
+    background-color: #E8E8E8;
+}
+select{
+    width:357px;
+}
+input{
+    width:350px;
+    height:30px;
+    margin-bottom: 10px;
+}
+input[type=submit]{
+    width:150px;
+    height:40px;
+    background-color: #00BFFF;
+}
+select{
+    height:35px;
+}
+h1{
+    color:purple;
+}
+
+.inputWithIcon i{
+    position:absolute;
+    left:370px;
+    top:437px;
+}

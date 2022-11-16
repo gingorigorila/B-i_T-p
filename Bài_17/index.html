@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="../fontawesome-free-6.2.0-web/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+    <div align="center">
+    <h1>ĐÓNG GÓP Ý KIẾN VỀ SẢN PHẨM</h1>
+    <p>Góp ý của bạn sẽ được chúng tôi xem xét, vui lòng nhập Tiếng Việt có dấu</p>
+    <p>
+        Các ý kiến đóng nên viết chi tiết rõ ràng, kèm theo các minh chứng xác thực thời gian và địa điểm <span>(nếu có)</span>
+    </p>
+    </div>
+    <form name="form_DG">
+        <input type="text" name="name" placeholder="Họ và Tên">
+        <input type="text" name="id_card" placeholder="Mã thẻ"><br>
+        <input type="text" name="tel" placeholder="Số điện thoại">
+        <input type="text" name="E_mail" placeholder="Email"><br>
+        <!-- <input type="text" name="Choose" placeholder="Chọn loại khách hàng"> -->
+        <select id="Choose">
+            <option value="" disabled selected>Chọn loại khách hàng</option>
+            <option value="VVIP">VVIP</option>
+            <option value="Normal">Normal</option>
+        </select>
+        <input type="text" name="id_HD" placeholder="Mã hóa đơn"><br>
+        <!-- <input style="width:714px; height:100px" type="text"  placeholder="Nhập chi tiết mô tả" align="left"><br> -->
+        <textarea cols="95" rows="5" placeholder="Nhập chi tiết mô tả" name="description"></textarea>
+        <div class="inputWithIcon">
+        <input type="submit" value="Gửi góp ý" onClick="TTDG()">
+        <i class="fa-brands fa-facebook-messenger"></i>
+        </div>
+    </form>
+    <script>
+        function TTDG(){
+           var name = document.forms["form_DG"]["name"].value;
+           var id_card = document.forms["form_DG"]["id_card"].value;
+           var tel = document.forms["form_DG"]["tel"].value;
+           var E_mail=document.forms["form_DG"]["E_mail"].value;
+        //    var Choose=document.forms["form_DG"]["Choose"].value;
+          var Choose=document.getElementById('Choose').value;
+           var id_HD=document.forms["form_DG"]["id_HD"].value;
+           var descrition=document.forms["form_DG"]["description"].value;
+           var TT = {
+               name:name,
+               id_card:id_card,
+               tel:tel,
+               E_mail:E_mail,
+               Choose:Choose,
+               id_HD:id_HD,
+               description:descrition 
+           }
+           alert("Họ và tên: "+ TT.name + "\n" + "Mã thẻ: "+ TT.id_card + "\n" + "Số điienj thoại: " +TT.tel + "\n" + "E-mail: " +TT.E_mail + "\n" + "Loại KH:" +TT.Choose + "\n" + "Mã HĐ: "+TT.id_HD + "\n" + "Nội dung góp ý:" +"\n"+TT.description);
+        }
+    </script>
+    </div>
+</body>
+</html>

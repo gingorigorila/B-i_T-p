@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="../fontawesome-free-6.2.0-web/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1>LIÊN HỆ</h1>
+    <hr>
+    <div id="container">
+         <div id="left">
+             <p>Thông tin</p>
+             <p><span><i class="fa-solid fa-location-dot"></i></span>Kp 6, P.Linh Trung, Tp. Thủ Đức, Tp. HCM</p>
+             
+             <p><span><i class="fa-light fa-envelope"></i></span>info@uit.edu.vn</p>
+             
+             <p><span> <i class="fa-solid fa-phone"></i></span>+84 28 372 52002</p>
+            
+         </div>
+         <div id="right">
+             <form name="form_LH">
+                <h2>Hãy liên lạc với chúng tôi bất cứ khi nào!!!</h2>
+                <input style="width:600px;" type="text" name="name" placeholder="Họ và Tên"><br>
+                <input style="width:600px;" type="text" name="E_mail" placeholder="Email"><br>
+                <input style="width:600px;" type="text" name="Title" placeholder="Tiêu đề bài viết"><br>
+                <!-- <input style="width:600px; height:100px" type="text" name="content" placeholder=""><br> -->
+                <textarea cols="80" rows="8" placeholder="Nội dung cần gửi" name="content"></textarea><br>
+                <div class="submitWithIcon">
+                <input type="submit" value="Gửi tin nhắn" onClick="GTN()">
+                <i class="fa-regular fa-circle-check" id="icon"></i>
+                </div>
+             </form> 
+        </div>
+        <script>
+            function GTN(){
+             var name = document.forms["form_LH"]["name"].value;
+             var E_mail=document.forms["form_LH"]["E_mail"].value;
+             var title=document.forms["form_LH"]["Title"].value;
+             var content=document.forms["form_LH"]["content"].value;
+             var object={
+                 name:name,
+                 E_mail:E_mail,
+                 title:title,
+                 content:content
+             }
+             confirm(object.name + "\n" + object.E_mail + "\n" + object.title + "\n" + object.content);
+            //  alert(object.name + "\n" + object.E_mail + "\n" + object.title + "\n" + object.content);
+            }
+        </script>
+    </div>
+</body>
+</html>

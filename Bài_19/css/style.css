@@ -1,0 +1,52 @@
+div{
+  border-radius: 10px;
+  /* background-color: #f2f2f2; */
+  padding: 20px;
+  width:290px;
+}
+form{
+    border: 1px solid black;
+   border-radius: 10px;
+}
+h1{
+    background-color: blue;
+    color:white;
+    border-radius: 10px;
+    margin-top:0px;
+}
+label{
+    padding-left:10px;
+}
+input[type=text][name=cnang]{
+    display: block;
+    margin: 0 auto;
+    width:270px;
+    background-color:#00FFFF
+}
+input[type=text][name=ccao]{
+    display: block;
+    margin: 0 auto;
+    width:270px;
+    color:red;
+}
+input[type=button]{
+    display: block;
+    margin: 0 auto;
+    width:100px;
+    height:30px;
+    background-color: #00FFFF;
+    border-radius:10px;
+}
+.Choose{
+    width:250px;
+    display: block;
+    margin: 0 auto;
+    width:270px;
+}
+
+p {
+    text-align: center;
+}
+
+#KQ {
+}

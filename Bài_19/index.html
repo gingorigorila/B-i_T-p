@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div>
+    <form name="BMI" method="post">
+        
+        <h1>TÍNH CHỈ SỐ BMI</h1>
+        <br>
+        <label>Nhập cân nặng?</label>
+        <br>
+        <input type="text" name="cnang">
+        <br>
+         
+        <label>Nhập chiều cao</label>
+        <br>
+        <input type="text" name="ccao">
+        <br>
+        
+        <label>Chọn loại tuổi</label>
+        <br>
+        <select class="Choose" name="Tuoi">
+            <option value="Trung niên">Trung niên</option>
+            <option value="Già lớn tuổi">Già lớn tuổi</option>
+        </select>
+        <br>
+        <br>
+        <input type="button" value="Tính BMI" onClick="giai()">
+        <br>
+            <p>KẾT QUẢ</p>
+            <div id="KQ">        
+            </div>
+        
+    </form>
+    </div>
+    <script src="js/script.js">
+        
+   </script>
+</body>
+</html>
